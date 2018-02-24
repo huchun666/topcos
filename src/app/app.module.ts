@@ -3,34 +3,37 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
+import { HomePage } from '../pages/home/home';
+import { CategoryListPage } from '../pages/category/list/list';
+import { ShoppingCartPage } from '../pages/shoppingcart/list/list';
+import { MemberIndexPage } from '../pages/member/index/index';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+/*
+* 组件集合
+* @variable Array
+* @component list 
+*/
+let componentList = [
+  MyApp,
+  TabsPage,
+  HomePage,
+  CategoryListPage,
+  ShoppingCartPage,
+  MemberIndexPage
+]
+
 @NgModule({
-  declarations: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
-  ],
+  declarations: componentList,
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
-  entryComponents: [
-    MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
-  ],
+  entryComponents: componentList,
   providers: [
     StatusBar,
     SplashScreen,
