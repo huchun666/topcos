@@ -26,6 +26,46 @@ dl,
 dt,
 dd,
 p,
+h1,
 h2 {
   margin: 0;
+}
+.list > .item-block:first-child,
+.list > .item-block .item-inner,
+.list > .item-block:last-child, 
+.list > .item-wrapper:last-child .item-block {
+  border: none;
+}
+.item-md ion-icon[item-left] + .item-inner, 
+.item-md ion-icon[item-left] + .item-input, 
+.item-md ion-icon[item-start] + .item-inner, 
+.item-md ion-icon[item-start] + .item-input {
+  margin-left: 0;
+}
+.item-md.item-input.item-input-has-focus .item-inner,
+.item-md.item-input.input-has-focus .item-inner,
+.item-md.item-input.item-input-has-focus:last-child,
+.item-md.item-input.input-has-focus:last-child {
+  border-bottom: none;
+  box-shadow: none;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { 
+  color: #999;
+  font-size: 1.4rem;
+} 
+input:-moz-placeholder, textarea:-moz-placeholder { 
+  color: #999;
+  font-size: 1.4rem;
+} 
+input::-moz-placeholder, textarea::-moz-placeholder { 
+  color: #999;
+  font-size: 1.4rem;
+} 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { 
+  color: #999;
+  font-size: 1.4rem;
+}
+.button-md {
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }

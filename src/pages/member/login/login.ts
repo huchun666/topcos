@@ -6,7 +6,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'login.html'
 })
 export class LoginPage {
-
+  isDisable: boolean = true;
   constructor(public navCtrl: NavController) {
 
   }
