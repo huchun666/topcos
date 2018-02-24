@@ -2,27 +2,26 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the CategoryPage page.
+ * Generated class for the MyPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
  */
 
 @IonicPage({
-  name: 'CategoryListPage',
-  segment: 'category-list'
+  segment: 'my-index'
 })
 @Component({
-  selector: 'page-category-list',
-  templateUrl: 'list.html',
+  selector: 'page-my',
+  templateUrl: 'my.html',
 })
-export class CategoryListPage {
+export class MyPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CategoryPage');
+    console.log('ionViewDidLoad MyPage');
   }
 
 }

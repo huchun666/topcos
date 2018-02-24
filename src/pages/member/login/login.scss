@@ -55,11 +55,13 @@ page-login {
     line-height: 20px;
     a {
       color: #2481e0;
+      text-decoration: none;
     }
   }
   .btn-login {
     margin-top: 44px;
     height: 40px;
+    font-size: 1.4rem;
   }
   .disable {
     background: #ccc;

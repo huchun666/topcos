@@ -1,6 +1,6 @@
-<ion-tabs>
-  <ion-tab [root]="tab1Root" tabTitle="首页" tabIcon="home"></ion-tab>
-  <ion-tab [root]="tab2Root" tabTitle="分类" tabIcon="apps"></ion-tab>
-  <ion-tab [root]="tab3Root" tabTitle="购物车" tabIcon="cart"></ion-tab>
-  <ion-tab [root]="tab4Root" tabTitle="我的" tabIcon="person"></ion-tab>
+<ion-tabs [selectedIndex]="selectedIndex">
+    <ion-tab [root]="homeRoot" tabUrlPath="login" tabTitle="首页" tabIcon="home"></ion-tab>
+    <ion-tab [root]="categoryRoot" tabUrlPath="category" tabTitle="分类" tabIcon="information-circle"></ion-tab>
+    <ion-tab [root]="shoppingcartRoot" tabUrlPath="shopping" tabTitle="购物车" tabIcon="cart"></ion-tab>
+    <ion-tab [root]="myRoot" tabUrlPath="my" tabTitle="我的" tabIcon="information-circle"></ion-tab>
 </ion-tabs>
