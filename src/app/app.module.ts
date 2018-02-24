@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { CategoryListPage } from '../pages/category/list/list';
 import { ShoppingCartPage } from '../pages/shoppingcart/list/list';
 import { MemberIndexPage } from '../pages/member/index/index';
+import { LoginPage } from '../pages/member/login/login';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,7 +24,8 @@ let componentList = [
   HomePage,
   CategoryListPage,
   ShoppingCartPage,
-  MemberIndexPage
+  MemberIndexPage,
+  LoginPage
 ]
 
 @NgModule({
